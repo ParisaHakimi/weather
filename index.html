@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav class="header">
+      <div class="logo">DojoWeather</div>
+      <ul>
+        <li>
+          <a href="#" onclick="alert(('Looking weather report'))">Burbank</a>
+        </li>
+        <li>
+          <a href="#" onclick="alert(('Looking weather report'))">Chicago</a>
+        </li>
+        <li>
+          <a href="#" onclick="alert(('Looking weather report'))">Dallas</a>
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <div class="cityName-section">
+        <h1>San Jose</h1>
+        <div class="selectContainer">
+          <p>show tempreture in</p>
+          <select name="temp" id="temp" onchange="convertToF()">
+            <option value="c" id="Celsius">&deg;C</option>
+            <option value="f" id="Fahrenheit">&deg;F</option>
+          </select>
+        </div>
+      </div>
+      <figure>
+        <div class="box">
+          <h2>Today</h2>
+          <img src="./assets/some_rain.png" alt="rainy day" />
+          <p>some rain</p>
+          <div class="degree-container">
+            <div class="temp high-temp" id="temp1">24</div>
+            <div class="temp low-temp" id="temp2">18</div>
+          </div>
+        </div>
+        <div class="box">
+          <h2>Tomorrow</h2>
+          <img src="./assets/some_sun.png" alt="sunny day" />
+          <p>some sun</p>
+          <div class="degree-container">
+            <div class="temp high-temp" id="temp3">27</div>
+            <div class="temp low-temp" id="temp4">19</div>
+          </div>
+        </div>
+        <div class="box">
+          <h2>Friday</h2>
+          <img src="./assets/some_clouds.png" alt="cloudy day" />
+          <p>some clouds</p>
+          <div class="degree-container">
+            <div class="temp high-temp" id="temp5">21</div>
+            <div class="temp low-temp" id="temp6">16</div>
+          </div>
+        </div>
+        <div class="box">
+          <h2>Saturday</h2>
+          <img src="./assets/some_sun.png" alt="sunny day" />
+          <p>some sun</p>
+          <div class="degree-container">
+            <div class="temp high-temp" id="temp7">26</div>
+            <div class="temp low-temp" id="temp8">21</div>
+          </div>
+        </div>
+      </figure>
+      <div id="acceptCookie" class="cooky-container">
+        <img src="./assets/cookie.png" alt="cookie image" />
+        <div class="paragraph-container">
+          <h3>Stop! Cookie time</h3>
+          <p>
+            We use cookies (sadly not the edible ones) to personalize content
+            and ads, to provide social media features and to analyze our
+            traffic. <a href="#"> Read more...</a>
+          </p>
+        </div>
+        <button>I Accept</button>
+      </div>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
